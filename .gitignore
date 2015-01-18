@@ -1,3 +1,11 @@
+## Working
+ex*
+LaTeX-Introduction.pdf
+
+## Mac OS X
+.DS_Store
+_MACOSX
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
