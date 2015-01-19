@@ -3,14 +3,14 @@
 %!TEX program = xelatex
 \documentclass{beamer}
 % ----- Loadings -----
-\newif\ifcompile\compilefalse
+\newif\ifcompile\compiletrue
 \usetheme[menuwidth={0.7\paperwidth}]{erlangen}
 \setbeamercovered{transparent=8}
 \graphicspath{{./figures/}}
+\usepackage{tipa}
 \usepackage{xeCJK}
 \usepackage{hologo}
 \usepackage{multicol}
-\usepackage{tipa}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -449,7 +449,7 @@ Happy \TeX ing!
     \inputminted[fontsize=\scriptsize,linenos]{tex}{ex01.tex}
   \end{column}
   \begin{column}{0.45\linewidth}
-    \ifcompile\write18{xelatex ex01-compile.tex}\fi
+    \ifcompile\immediate\write18{xelatex ex01-compile.tex}\fi
     \fbox{\includegraphics[width = 0.96\linewidth]{ex01-compile.pdf}}
   \end{column}
 \end{columns}
@@ -463,7 +463,7 @@ Happy \TeX ing!
     \inputminted[fontsize=\scriptsize,linenos]{tex}{ex02.tex}
   \end{column}
   \begin{column}{0.45\linewidth}
-    \ifcompile\write18{xelatex ex02-compile.tex}\fi
+    \ifcompile\immediate\write18{xelatex ex02-compile.tex}\fi
     \fbox{\includegraphics[width = 0.96\linewidth]{ex02-compile.pdf}}
   \end{column}
 \end{columns}
